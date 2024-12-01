@@ -1,0 +1,99 @@
+/* -*- Mode: Javascript; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+{
+    "io": {
+        "footpedals": "io/sawRobotIO1394-MTMR-foot-pedals.xml"
+    }
+    ,
+    "arms":
+    [
+        {
+            "name": "PSM1",
+            "type": "PSM",
+            "serial": "29463",
+            "base-frame": {
+                            "reference-frame": "ECM",
+                            "transform": [[  1.0,  0.0,          0.0,         -0.20],
+                                          [  0.0, -0.866025404,  0.5,          0.0 ],
+                                          [  0.0, -0.5,         -0.866025404,  0.0 ],
+                                          [  0.0,  0.0,          0.0,          1.0 ]]
+                        }
+        }
+        ,
+        {
+            "name": "PSM2",
+            "type": "PSM",
+            "serial": "28170",
+            "base-frame": {
+                            "reference-frame": "ECM",
+                            "transform": [[  1.0,  0.0,          0.0,          0.20],
+                                          [  0.0, -0.866025404,  0.5,          0.0 ],
+                                          [  0.0, -0.5,         -0.866025404,  0.0 ],
+                                          [  0.0,  0.0,          0.0,          1.0 ]]
+                        }
+        }
+        ,
+        {
+            "name": "ECM",
+            "type": "ECM",
+            "serial": "15122"
+        }
+        ,
+        {
+            "name": "MTMR",
+            "type": "MTM",
+            "serial": "57961",
+            "base-frame": {
+                            "reference-frame": "HRSV",
+                            "transform": [[ -1.0,  0.0,          0.0,         -0.180],
+                                          [  0.0,  0.866025404,  0.5,          0.400],
+                                          [  0.0,  0.5,         -0.866025404,  0.475],
+                                          [  0.0,  0.0,          0.0,          1.0]]
+                        }
+        }
+        ,
+        {
+            "name": "MTML",
+            "type": "MTM",
+            "serial": "55226",
+            "base-frame": {
+                            "reference-frame": "HRSV",
+                            "transform": [[ -1.0,  0.0,          0.0,          0.180],
+                                          [  0.0,  0.866025404,  0.5,          0.400],
+                                          [  0.0,  0.5,         -0.866025404,  0.475],
+                                          [  0.0,  0.0,          0.0,          1.0]]
+                        }
+        }
+    ]
+    ,
+    "psm-teleops":
+    [
+        {
+            "mtm": "MTMR",
+            "psm": "PSM1"//,
+            //"configure-parameter": {
+            //    "rotation": [[ -1.0000, 0.0000,  0.0000],
+             //                [ 0.0000,  -1.0000,  0.0000],
+             //                [ 0.0000,  0.0000,  1.0000]]
+
+            //}
+        }
+        ,
+        {
+            "mtm": "MTML",
+            "psm": "PSM2"//,
+            //"configure-parameter": {
+            //    "rotation": [[ -1.0000, 0.0000,  0.0000],
+             //                [ 0.0000,  -1.0000,  0.0000],
+             //                [ 0.0000,  0.0000,  1.0000]]
+
+            //}
+        }
+    ]
+    ,
+    "ecm-teleop":
+    {
+        "mtm-left": "MTML",
+        "mtm-right": "MTMR",
+        "ecm": "ECM"
+    }
+}

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<Config Version="5">
+  <Robot Name="PSM2" HardwareVersion="QLA1" NumOfActuator="7" NumOfJoint="7" SN="28170">
+    <Actuator ActuatorID="0" AxisID="0" BoardID="8" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="-5242.8800" />
+        <BitsToFeedbackAmps Offset="6.2500" Scale="-0.000190735" />
+        <NmToAmps Scale="0.4040893846" />
+        <MaxCurrent Unit="A" Value="1.340" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="-0.000442477876106" Unit="deg" />
+        <PositionLimitsSoft Lower="-91.0" Upper="91.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="99.91238031" Scale="-44.44488519" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="1" AxisID="1" BoardID="8" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="-5242.8800" />
+        <BitsToFeedbackAmps Offset="6.2500" Scale="-0.000190735" />
+        <NmToAmps Scale="0.4040893846" />
+        <MaxCurrent Unit="A" Value="1.340" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="-0.000442477876106" Unit="deg" />
+        <PositionLimitsSoft Lower="-53.0" Upper="53.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="65.89587602" Scale="-29.18367711" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="2" AxisID="2" BoardID="8" Type="Prismatic">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="5242.8800" />
+        <BitsToFeedbackAmps Offset="-6.2500" Scale=" 0.000190735" />
+        <NmToAmps Scale="0.0678284321" />
+        <MaxCurrent Unit="A" Value="0.670" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="0.001296293820559" Unit="mm" />
+        <PositionLimitsSoft Lower="0.0" Upper="240.0" Unit="mm" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="-11.94000512" Scale="59.51490551" Unit="mm" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="3" AxisID="3" BoardID="8" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="-5242.8800" />
+        <BitsToFeedbackAmps Offset="6.2500" Scale="-0.000190735" />
+        <NmToAmps Scale="1.9497053995" />
+        <MaxCurrent Unit="A" Value="0.670" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="-0.007685738684885" Unit="deg" />
+        <PositionLimitsSoft Lower="-174.0" Upper="174.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="179.76550822" Scale="-78.80672363" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="4" AxisID="0" BoardID="9" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="-5242.8800" />
+        <BitsToFeedbackAmps Offset="6.2500" Scale="-0.000190735" />
+        <NmToAmps Scale="1.9497053995" />
+        <MaxCurrent Unit="A" Value="0.670" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="-0.007685738684885" Unit="deg" />
+        <PositionLimitsSoft Lower="-174.0" Upper="174.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="177.21584603" Scale="-78.99447044" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="5" AxisID="1" BoardID="9" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="5242.8800" />
+        <BitsToFeedbackAmps Offset="-6.2500" Scale=" 0.000190735" />
+        <NmToAmps Scale="1.9497053995" />
+        <MaxCurrent Unit="A" Value="0.670" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="0.007685738684885" Unit="deg" />
+        <PositionLimitsSoft Lower="-174.0" Upper="174.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="179.35297861" Scale="-78.86930590" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Actuator ActuatorID="6" AxisID="2" BoardID="9" Type="Revolute">
+      <Drive>
+        <AmpsToBits Offset="32768" Scale="5242.8800" />
+        <BitsToFeedbackAmps Offset="-6.2500" Scale=" 0.000190735" />
+        <NmToAmps Scale="1.9497053995" />
+        <MaxCurrent Unit="A" Value="0.670" />
+      </Drive>
+      <Encoder VelocitySource="FIRMWARE">
+        <BitsToPosSI Scale="0.007685738684885" Unit="deg" />
+        <PositionLimitsSoft Lower="-174.0" Upper="174.0" Unit="deg" />
+      </Encoder>
+      <AnalogIn>
+        <BitsToVolts Offset="0" Scale="6.866455078125e-05" />
+        <VoltsToPosSI Offset="179.14098423" Scale="-78.96839449" Unit="deg" />
+      </AnalogIn>
+    </Actuator>
+    <Potentiometers>
+      <Tolerance Axis="0" Distance="5.0" Latency="0.01" Unit="deg" />
+      <Tolerance Axis="1" Distance="5.0" Latency="0.01" Unit="deg" />
+      <Tolerance Axis="2" Distance="5.0" Latency="0.01" Unit="mm" />
+      <Tolerance Axis="3" Distance="5.0" Latency="0.01" Unit="deg" />
+      <Tolerance Axis="4" Distance="5.0" Latency="0.01" Unit="deg" />
+      <Tolerance Axis="5" Distance="5.0" Latency="0.01" Unit="deg" />
+      <Tolerance Axis="6" Distance="5.0" Latency="0.01" Unit="deg" />
+    </Potentiometers>
+  </Robot>
+  <DallasChip BoardID="9" Name="PSM2-Dallas" />
+  <DigitalIn BitID="0" BoardID="8" Debounce="0.2" Name="PSM2-SUJClutch" Pressed="1" Trigger="all" />
+  <DigitalIn BitID="2" BoardID="8" Debounce="0.2" Name="PSM2-ManipClutch" Pressed="1" Trigger="all" />
+  <DigitalIn BitID="7" BoardID="9" Debounce="0.2" Name="PSM2-Tool" Pressed="1" Trigger="all" />
+  <DigitalIn BitID="10" BoardID="9" Debounce="0.2" Name="PSM2-Adapter" Pressed="1" Trigger="all" />
+</Config>
